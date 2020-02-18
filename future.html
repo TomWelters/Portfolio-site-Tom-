@@ -4,6 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title>UI/UX Designer Berlin - Tom Welters</title>
+    <link rel="stylesheet" type="text/css" href:"https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,15 +18,15 @@
 <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body>
+  <body id="future">
 
     <header>
-      <div>
-        <div><!--open logo + subtitle-->
-          <div><!--open logo-->
-            <img src="img/tomwelters.svg" alt="Tom Welters">
+      <div class="container-header">
+        <div class="logo subtitle">
+          <div class="logo">
+            <a href="index.html"><img src="img/tomwelters.svg" alt="Tom Welters"></a>
           </div><!--close logo-->
-          <div><!--open subtitle-->
+          <div class="subititle">
             <span>UI/UX Designer</span>
           </div><!--close subtitle-->
         </div><!--close logo + subtitle-->
@@ -29,6 +34,16 @@
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html">Work</a></li>
+                <ul class="projects">
+                  <li><a href="future.html">Future</a></li>
+                  <li><a href="#">Evolve</a></li>
+                  <li><a href="#">Switch</a></li>
+                  <li><a href="#">Film Runner UX</a></li>
+                  <li><a href="#">Film Runner UI</a></li>
+                  <li><a href="#">Dreamcatcher</a></li>
+                  <li><a href="#">Messenger app</a></li>
+                  <li><a href="#">R&T ecommerce</a></li>
+                </ul>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -38,8 +53,8 @@
       <main>
 
         <!--intro-->
-        <div><!--opens section-->
-          <div><!--open container-->
+        <div id="intro-future">
+          <div class="container-future">
            <h1>Future</h1>
             <span>UI & UX design</span>
               <p>
@@ -50,24 +65,26 @@
         </div><!--close section-->
 
         <!--project-->
-        <div><!--open section-->
-          <div><!--open container-->
+        <div id="future-project">
+          <div class="container-project1">
 
-              <div><!--open part 1-->
+            <div class="part-1">
+              <picture>
                 <source srcset="img/future/future_part_1@1x.jpg" media="(max-width:767px)">
-                  <img src="img/future/future_part_1@2x.jpg" alt="Future home sreen">
-              </div><!--close part 1-->
+                  <img src="img/future/future_part_1@2x.jpg" alt="Future home screen">
+              </picture><!--close part 1-->
+            </div><!--close part 1-->
 
-              <div><!--open part 2-->
+              <div class="part-2">
                   <picture>
                     <source srcset="img/future/future_part_2@1x.jpg" media="(max-width:767px)">
-                      <img src="img/future/future_part_2@2x.jpg" alt="Future home sreen">
+                      <img src="img/future/future_part_2@2x.jpg" alt="Future home screen">
                   </picture>
               </div><!--close part 1-->
 
-              <div><!--open part 3-->
-                <div><!--open row-->
-                  <div><!--open column 1-->
+              <div class="part-3"><!--open part 3-->
+                <div class="row-3"><!--open row-->
+                  <div class=column-1><!--open column 1-->
                     <h2>What</h2>
                       <p>
                         Web app, and mobile app allowing all data on income and expenses to be recorded easily,
@@ -86,7 +103,7 @@
                         the information they receive via the tool is accessible, and clearly tells them what they can do to better save.
                       </p>
                   </div><!--close column 1-->
-                  <div><!--open column 2-->
+                  <div class=column-2><!--open column 2-->
                     <h2>When</h2>
                       <p>
                         Users will utilize the tool in the period before a planned expense. During this period,
@@ -103,9 +120,9 @@
                 </div><!--close row-->
               </div><!--close part 3-->
 
-            <div><!--open part 4-->
-              <div>
-                <h3>Icons & UI elements<h3>
+            <div class="part-4">
+              <div class="icons">
+                <h2>Icons & UI elements</h2>
               </div>
                 <picture>
                   <source srcset="img/future/future_part_6@1x.jpg" media="(max-width:767px)">
@@ -113,8 +130,8 @@
                 </picture>
               </div><!--close part 4-->
 
-              <div><!--open part 5-->
-                <div>
+              <div class="part-5">
+                <div class="user-flows">
                   <h2>User Flow</h2>
                     <h3>User flow 1</h3>
                       <p>
@@ -139,32 +156,40 @@
                   </picture>
               </div><!--close part 5-->
 
-              <div><!--open part 6-->
-                <div>
+              <div class="part-6">
+                <div class="ui-design">
                   <h2>UI design</h2>
                 </div>
-                <div><!--open row-->
-                <picture>
-                  <source srcset="img/future/screen_1@1x.jpg" media="(max-width:767px)">
-                    <img src="img/future/future_screen_1@2x.jpg" alt="UI design">
-                </picture>
-                <picture>
-                  <source srcset="img/future/screen_2@1x.jpg" media="(max-width:767px)">
-                    <img src="img/future/future_screen_2@2x.jpg" alt="UI design">
-                </picture>
-                <picture>
-                  <source srcset="img/future/screen_3@1x.jpg" media="(max-width:767px)">
-                    <img src="img/future/future_screen_3@2x.jpg" alt="UI design">
-                </picture>
-                <picture>
-                  <source srcset="img/future/screen_4@1x.jpg" media="(max-width:767px)">
-                    <img src="img/future/future_screen_4@2x.jpg" alt="UI design">
-                </picture>
+                <div class="row-6"><!--open row-->
+                <div class="screen-1">
+                  <picture>
+                    <source srcset="img/future/screen_1@1x.jpg" media="(max-width:767px)">
+                      <img src="img/future/future_screen_1@2x.jpg" alt="UI design">
+                  </picture>
+                </div>
+                <div class="screen-2">
+                  <picture>
+                    <source srcset="img/future/screen_2@1x.jpg" media="(max-width:767px)">
+                      <img src="img/future/future_screen_2@2x.jpg" alt="UI design">
+                  </picture>
+                </div>
+                <div class="screen-3">
+                  <picture>
+                    <source srcset="img/future/screen_3@1x.jpg" media="(max-width:767px)">
+                      <img src="img/future/future_screen_3@2x.jpg" alt="UI design">
+                  </picture>
+                </div>
+                <div class="screen-4">
+                  <picture>
+                    <source srcset="img/future/screen_4@1x.jpg" media="(max-width:767px)">
+                      <img src="img/future/future_screen_4@2x.jpg" alt="UI design">
+                  </picture>
+                </div>
                 </div><!--close row-->
               </div><!--close part 6-->
 
-              <div><!--open part 7-->
-                <a href="files/future.pdf">See whole project</a>
+              <div class="part-7"><!--open part 7-->
+                <a href="files/future.pdf" class="button future">See whole project</a>
               </div><!--close part 7-->
 
           </div><!--close container-->
@@ -173,15 +198,15 @@
       </main>
 
       <footer id="contact">
-        <div>
+        <div class="container-contact">
           <h2>Get in touch</h2>
           <p>
             Do you like my work and want to discuss opportunities? Please get in touch!
           </p>
-            <div>
-              <a href="mailto:tmwelters@gmail.com">Email me</a>
+            <div class="email">
+              <a href="mailto:tmwelters@gmail.com" class="button">Email me</a>
             </div>
-            <div>
+            <div class="social">
               <a href="https://dribbble.com/tomwelters" target="_blank"><svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
                   <title>dribbble_icon</title>
@@ -220,11 +245,11 @@
                   </g>
               </svg>
             </a>
-            </div>
-              <p>
-                Copyright Tom Welters 2020
-              </p>
-        </div>
+          </div>
+          <p>
+            Copyright Tom Welters 2020
+          </p>
+         </div>
       </footer>
 
     </body>
