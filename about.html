@@ -4,6 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>UI/UX Designer Berlin - Tom Welters</title>
+    <link rel="stylesheet" type="text/css" href:"https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,15 +17,15 @@
 <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body>
+  <body id="about">
 
     <header>
-      <div>
-        <div><!--open logo + subtitle-->
-          <div><!--open logo-->
-            <img src="img/tomwelters.svg" alt="Tom Welters">
+      <div class="container-header">
+        <div class="logo subtitle">
+          <div class="logo">
+            <a href="index.html"><img src="img/tomwelters.svg" alt="Tom Welters"></a>
           </div><!--close logo-->
-          <div><!--open subtitle-->
+          <div class="subititle">
             <span>UI/UX Designer</span>
           </div><!--close subtitle-->
         </div><!--close logo + subtitle-->
@@ -29,6 +33,16 @@
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html">Work</a></li>
+                <ul class="projects">
+                  <li><a href="future.html">Future</a></li>
+                  <li><a href="#">Evolve</a></li>
+                  <li><a href="#">Switch</a></li>
+                  <li><a href="#">Film Runner UX</a></li>
+                  <li><a href="#">Film Runner UI</a></li>
+                  <li><a href="#">Dreamcatcher</a></li>
+                  <li><a href="#">Messenger app</a></li>
+                  <li><a href="#">R&T ecommerce</a></li>
+                </ul>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -37,14 +51,14 @@
 
       <main>
 
-          <div><!--open title-->
-            <div><!--open container title-->
+          <div id="title-about">
+            <div class="container-title"><!--open container title-->
               <h1>About</h1>
             </div><!--close container title-->
           </div><!--close open title-->
 
-          <div><!--open about section-->
-            <div><!--open container-->
+          <div class="section-about"><!--open about section-->
+            <div class="container-about"><!--open container-->
 
             <picture>
               <a href="#"><source srcset="img/profile_pic_about@1x.jpg" media="(max-width:767px)">
@@ -66,13 +80,13 @@
             </div><!--close container-->
           </div><!--close section-->
 
-          <div><!--open skills-->
-            <div><!--open container skills-->
-                <h2>Skills<h2>
+          <div class="skills">
+            <div class="container-skills">
+                <h2>Skills</h2>
 
-              <div><!--open row-->
+              <div class="row-skills">
 
-                <div><!--open Interaction column-->
+                <div class="column-skills">
                   <h3>Interaction</h3>
                     <ul>
                       <li>User research</li>
@@ -83,7 +97,7 @@
                     </ul>
                 </div><!--close Interaction column-->
 
-                <div><!--open visual column-->
+                <div class="column-skills">
                   <h3>Visuals</h3>
                     <ul>
                       <li>Drawing</li>
@@ -94,7 +108,7 @@
                     </ul>
                 </div><!--close visual column-->
 
-                <div><!--open Software column-->
+                <div class="column-skills">
                   <h3>Software</h3>
                     <ul>
                       <li>Sketch</li>
@@ -105,7 +119,7 @@
                     </ul>
                 </div><!--close Software column-->
 
-                <div><!--open technical column-->
+                <div class="column-skills">
                   <h3>Technical</h3>
                     <ul>
                       <li>HTML</li>
@@ -121,15 +135,15 @@
       </main>
 
       <footer id="contact">
-        <div>
+        <div class="container-contact">
           <h2>Get in touch</h2>
           <p>
             Do you like my work and want to discuss opportunities? Please get in touch!
           </p>
-            <div>
-              <a href="mailto:tmwelters@gmail.com">Email me</a>
+            <div class="email">
+              <a href="mailto:tmwelters@gmail.com" class="button">Email me</a>
             </div>
-            <div>
+            <div class="social">
               <a href="https://dribbble.com/tomwelters" target="_blank"><svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
                   <title>dribbble_icon</title>
@@ -168,11 +182,11 @@
                   </g>
               </svg>
             </a>
-            </div>
-              <p>
-                Copyright Tom Welters 2020
-              </p>
-        </div>
+          </div>
+          <p>
+            Copyright Tom Welters 2020
+          </p>
+         </div>
       </footer>
 
     </body>
