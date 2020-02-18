@@ -1,0 +1,188 @@
+/*
+Colors used:
+Primary Color (Blue): #3448C7;
+Secondary Color (grey): #FBFBFB;
+*/
+
+body {
+  background-color: #FBFBFB;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgb(153, 153, 153);
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #000000;
+}
+
+h2 {
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #000000;
+}
+
+p {
+  color: #999999;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #3448C7;
+}
+
+.radiushome img {
+  border-radius: 6px;
+}
+
+span {
+  color: #545454;
+  font-size: 1.5625em;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+nav {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+nav .projects a {
+  line-height: 13px;
+  color: #545454;
+  font-weight: 400;
+}
+
+nav .projects a:active,
+nav .projects a:hover,
+nav .projects a:focus {
+  color: #3448C7;
+}
+
+.container-title h1 {
+  color: #3448C7;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.container-about p {
+  text-align: center;
+}
+
+.skills h2 {
+  color: #3448C7;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.column-skills h3 {
+  color: #3448C7;
+  font-weight: 400;
+}
+
+#future {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.container-future h1 {
+  color: #0A1A35;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.part-3 {
+  background-color: #0A1A35;
+}
+
+.part-3 h2 {
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+
+.part-3 p {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.icons h2 {
+  color: #FFFFFF;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.part-5 {
+  background-color: #0A1A35;
+}
+
+.user-flows h2 {
+  color: #FFFFFF;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.user-flows h3 {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.user-flows p {
+  color: #FFFFFF;
+}
+
+.ui-design h2{
+  color: #FFFFFF;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.part-7 {
+  background-color: #0B1D38;
+}
+
+.button {
+    display: inline-block;
+    background-color: #3448C7;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 3px;
+    border: 2px solid #3448C7;
+    transition: 0.2s opacity;
+  }
+
+.button:hover,
+.button:focus,
+.button:active {
+    color: #3448C7;
+    background-color: transparent;
+  }
+
+.button.future {
+  color: #ffffff;
+  background-color: rgba(71,228,186,0.2);
+  font-weight: 500;
+  border: 2px solid #47E4BA; 
+}
+
+.button.future:hover,
+.button.future:focus,
+.button.future:active {
+  color: #ffffff;
+  background-color: #47E4BA;
+}
