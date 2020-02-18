@@ -4,6 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>UI/UX Designer Berlin - Tom Welters</title>
+    <link rel="stylesheet" type="text/css" href:"https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,15 +17,15 @@
 <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body>
+  <body id="homepage">
 
     <header>
-      <div>
-        <div><!--open logo + subtitle-->
-          <div><!--open logo-->
-            <img src="img/tomwelters.svg" alt="Tom Welters">
+      <div class="container-header">
+        <div class="logo subtitle">
+          <div class="logo">
+            <a href="index.html"><img src="img/tomwelters.svg" alt="Tom Welters"></a>
           </div><!--close logo-->
-          <div><!--open subtitle-->
+          <div class="subititle">
             <span>UI/UX Designer</span>
           </div><!--close subtitle-->
         </div><!--close logo + subtitle-->
@@ -29,6 +33,16 @@
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html">Work</a></li>
+                <ul class="projects">
+                  <li><a href="future.html">Future</a></li>
+                  <li><a href="#">Evolve</a></li>
+                  <li><a href="#">Switch</a></li>
+                  <li><a href="#">Film Runner UX</a></li>
+                  <li><a href="#">Film Runner UI</a></li>
+                  <li><a href="#">Dreamcatcher</a></li>
+                  <li><a href="#">Messenger app</a></li>
+                  <li><a href="#">R&T ecommerce</a></li>
+                </ul>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -38,8 +52,8 @@
       <main>
 
         <!--intro-->
-        <div><!--opens section-->
-          <div><!--open container-->
+        <div id="intro">
+          <div class="container-intro">
            <h1>My work</h1>
             <p>
               Hi, I am Tom, a UI/UX designer originally from the Netherlands now based in Berlin.
@@ -48,16 +62,16 @@
         </div><!--close section-->
 
           <!--projects-->
-          <div><!--open section-->
-            <div><!--open container-->
+          <div id="projects" class="radiushome">
+            <div class=container-projects>
 
-              <div><!--open row-->
+              <div class="row-projects">
 
-                <a href="future.html">
-                  <div><!--open future picture-->
+                <a href="future.html" class="future">
+                  <div>
                       <img src="img/future_cover_portfolio@2x.jpg" alt="Future">
                   </div><!--close column picture-->
-                  <div><!--open desription-->
+                  <div class="description-project"><!--open desription-->
                     <h2>Future</h2>
                     <p>
                       Money saving app & Responsive website
@@ -65,11 +79,11 @@
                   </div><!--close description-->
                 </a><!--close column-->
 
-                <a href="pat-to-project-page">
-                  <div><!--open picture-->
+                <a href="pat-to-project-page" class="evolve">
+                  <div>
                     <img src="img/evolve_cover_portfolio@2x.jpg" alt="Evolve">
                   </div><!--close picture-->
-                  <div><!--open description-->
+                  <div class="description-project">
                     <h2>Evolve</h2>
                     <p>
                       Volunteer app for Android & iOs
@@ -77,11 +91,11 @@
                   </div><!--close description-->
                </a>
 
-                <a href="pat-to-project-page">
+                <a href="pat-to-project-page" class="switch">
                   <div><!--open picture-->
                     <img src="img/switch_cover_portfolio@2x.jpg" alt="Switch">
                   </div><!--close picture-->
-                  <div><!--open description-->
+                  <div class="description-project">
                     <h2>Switch</h2>
                     <p>
                       Music player app
@@ -89,11 +103,11 @@
                   </div><!--close description-->
                 </a>
 
-                <a href="pat-to-project-page">
+                <a href="pat-to-project-page" class="filmrunner-ux">
                   <div><!--open Filmrunner UX picture-->
                     <img src="img/filmrunner_ux_cover_portfolio@2x.jpg" alt="Film Runner UX">
                   </div><!--close picture-->
-                  <div><!--open description-->
+                  <div class="description-project">
                     <h2>Film Runner UX</h2>
                     <p>
                       Planning a location-based movie app
@@ -101,11 +115,11 @@
                   </div><!--close description-->
                 </a>
 
-                <a href="pat-to-project-page">
+                <a href="pat-to-project-page" class="filmrunner-ui">
                   <div><!--open picture-->
                     <img src="img/filmrunner_ui_cover_portfolio@2x.jpg" alt="Film Runner UI">
                   </div><!--close picture-->
-                  <div><!--open description-->
+                  <div class="description-project"><!--open description-->
                    <h2>Film Runner UI</h2>
                    <p>
                      Movie app & Responsive website
@@ -113,11 +127,11 @@
                   </div><!--close description-->
                 </a>
 
-                <a href="pat-to-project-page">
+                <a href="pat-to-project-page" class="dreamcatcher">
                   <div><!--open column picture-->
                     <img src="img/dreamcatcher_cover_portfolio@2x.jpg" alt="Dreamcatcher">
                   </div><!--close column picture-->
-                  <div><!--open description-->
+                  <div class="description-project"><!--open description-->
                    <h2>Dreamcatcher</h2>
                    <p>
                      Minimal note taking app
@@ -125,11 +139,11 @@
                   </div><!--close description-->
                 </a>
 
-                <a href="pat-to-project-page">
+                <a href="pat-to-project-page" class="messenger">
                   <div><!--open messenger app picture-->
                     <img src="img/messenger_app_cover_portfolio@2x.jpg" alt="messenger app">
                   </div><!--close column picture-->
-                  <div><!--open desription-->
+                  <div class="description-project"><!--open desription-->
                     <h2>Messenger app</h2>
                     <p>
                       UI design
@@ -137,11 +151,11 @@
                   </div><!--close description-->
                 </a>
 
-                <a href="pat-to-project-page">
+                <a href="pat-to-project-page" class="ecommerce">
                   <div><!--open picture-->
                     <img src="img/r&t_cover_portfolio@2x.jpg" alt="r&t ecommerce">
                   </div><!--close column picture-->
-                  <div><!--open description-->
+                  <div class="description-project"><!--open description-->
                     <h2>R&T ecommerce</h2>
                     <p>
                       Webshop
@@ -157,15 +171,15 @@
       </main>
 
     <footer id="contact">
-      <div>
+      <div class="container-contact">
         <h2>Get in touch</h2>
         <p>
           Do you like my work and want to discuss opportunities? Please get in touch!
         </p>
-          <div>
-            <a href="mailto:tmwelters@gmail.com">Email me</a>
+          <div class="email">
+            <a href="mailto:tmwelters@gmail.com" class="button">Email me</a>
           </div>
-          <div>
+          <div class="social">
             <a href="https://dribbble.com/tomwelters" target="_blank"><svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
                 <title>dribbble_icon</title>
