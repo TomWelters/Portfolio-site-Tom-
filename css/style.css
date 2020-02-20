@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: rgb(153, 153, 153);
+  color: #999999;
 }
 
 h1 {
@@ -20,14 +20,13 @@ h1 {
 }
 
 h2 {
-  font-size: 1.125em;
-  font-weight: 400;
+  font-size: 1.5;
+  font-weight: 600;
   color: #000000;
 }
 
-p {
-  color: #999999;
-  font-weight: 400;
+h3 {
+  font-weight: 500;
 }
 
 img {
@@ -39,8 +38,15 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #000000;
+}
+
 a:hover,
-a:focus,
+a:focus, {
+  color: #3448C7;
+}
+
 a:active {
   color: #3448C7;
 }
@@ -61,6 +67,13 @@ nav {
   font-weight: 700;
 }
 
+nav a:active,
+nav a:hover,
+nav a:focus {
+  color: #3448C7;
+  font-weight: 500;
+}
+
 nav .projects a {
   line-height: 13px;
   color: #545454;
@@ -73,19 +86,20 @@ nav .projects a:focus {
   color: #3448C7;
 }
 
-.container-title h1 {
+#title-about h1 {
   color: #3448C7;
   font-weight: 700;
   font-size: 2em;
+  text-align: center;
 }
 
-.container-about p {
+.section-about p {
   text-align: center;
 }
 
 .skills h2 {
   color: #3448C7;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   font-size: 1.5em;
 }
@@ -99,60 +113,14 @@ nav .projects a:focus {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.container-future h1 {
-  color: #0A1A35;
-  font-size: 2em;
-  font-weight: 700;
+#future-project h2,
+#future-project h3,
+#future-project p {
+  color: #FFFFFF;
 }
 
-.part-3 {
+#future-project .dark {
   background-color: #0A1A35;
-}
-
-.part-3 h2 {
-  color: #FFFFFF;
-  font-size: 1.5em;
-}
-
-.part-3 p {
-  color: #FFFFFF;
-  font-weight: 400;
-}
-
-.icons h2 {
-  color: #FFFFFF;
-  font-size: 2em;
-  font-weight: 900;
-}
-
-.part-5 {
-  background-color: #0A1A35;
-}
-
-.user-flows h2 {
-  color: #FFFFFF;
-  font-size: 2em;
-  font-weight: 900;
-}
-
-.user-flows h3 {
-  color: #FFFFFF;
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-.user-flows p {
-  color: #FFFFFF;
-}
-
-.ui-design h2{
-  color: #FFFFFF;
-  font-size: 2em;
-  font-weight: 900;
-}
-
-.part-7 {
-  background-color: #0B1D38;
 }
 
 .button {
@@ -167,21 +135,20 @@ nav .projects a:focus {
   }
 
 .button:hover,
-.button:focus,
 .button:active {
     color: #3448C7;
     background-color: transparent;
   }
 
 .button.future {
+  display: inline-block;
   color: #ffffff;
   background-color: rgba(71,228,186,0.2);
   font-weight: 500;
-  border: 2px solid #47E4BA; 
+  border: 2px solid #47E4BA;
 }
 
 .button.future:hover,
-.button.future:focus,
 .button.future:active {
   color: #ffffff;
   background-color: #47E4BA;
