@@ -61,7 +61,7 @@ a:active {
 
 span {
   color: #545454;
-  font-size: 1.5625em;
+  font-size: 1.3em;
   font-weight: 600;
   line-height: 14px;
 }
@@ -112,6 +112,11 @@ nav .projects a:focus {
   font-size: 1.5em;
 }
 
+.skills {
+  padding: 10px 0px 20px 0px;
+  background-color: #EEF6F9;
+}
+
 .column-skills h3 {
   color: #3448C7;
   font-weight: 400;
@@ -132,9 +137,15 @@ nav .projects a:focus {
 }
 
 .social {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
+  margin-top: 10px;
+}
+
+.social svg {
+  margin: 0 20px 0 0;
+}
+
+.social svg:hover #Group {
+  fill: #3448C7;
 }
 
 .button {
@@ -175,8 +186,12 @@ nav .projects a:focus {
 }
 
 .logo {
-  max-width: 250px;
-  padding: 10px 0;
+  max-width: 200px;
+  padding: 20px 0px 10px 0px;
+}
+
+.subtitle {
+  padding-top: 5px;
 }
 
 nav > ul {
@@ -221,10 +236,6 @@ nav > ul > li{
   margin: 10px 0px;
 }
 
-.social {
-  display: inline-block;
-}
-
 /* Layout styling about page*/
 
 .skills h3 {
@@ -243,6 +254,10 @@ nav > ul > li{
 
 #intro-future p {
   margin: 15px 0px;
+}
+
+#future img {
+  display: block;
 }
 
 .dark h2 {
