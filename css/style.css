@@ -4,6 +4,10 @@ Primary Color (Blue): #3448C7;
 Secondary Color (grey): #FBFBFB;
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #FBFBFB;
   font-family: 'Muli', sans-serif;
@@ -67,9 +71,13 @@ nav {
   font-weight: 700;
 }
 
-nav a:active,
 nav a:hover,
 nav a:focus {
+  color: #3448C7;
+  font-weight: 500;
+}
+
+nav a:active {
   color: #3448C7;
   font-weight: 500;
 }
@@ -109,7 +117,7 @@ nav .projects a:focus {
   font-weight: 400;
 }
 
-#future {
+#future-project {
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -121,6 +129,12 @@ nav .projects a:focus {
 
 #future-project .dark {
   background-color: #0A1A35;
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
 }
 
 .button {
@@ -152,4 +166,122 @@ nav .projects a:focus {
 .button.future:active {
   color: #ffffff;
   background-color: #47E4BA;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.logo {
+  max-width: 250px;
+  padding: 10px 0;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+nav > ul > li{
+  padding: 10px 0px;
+}
+
+.projects {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.projects li {
+  padding: 5px 0px;
+}
+
+#homepage .row {
+  margin: 25px 0;
+}
+
+#projects h2 {
+  text-align: center;
+}
+
+#projects p {
+  text-align: center;
+}
+
+.row h2 {
+  margin: 5px 0px 5px 0px;
+}
+
+.row p {
+  margin: 5px 0px 30px 0px;
+}
+
+.button {
+  margin: 10px 0px;
+}
+
+.social {
+  display: inline-block;
+}
+
+/* Layout styling about page*/
+
+.skills h3 {
+  margin: 15px 0px 5px 0px;
+  text-align: center;
+}
+
+.column-skills ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Layout styling future page*/
+
+#intro-future p {
+  margin: 15px 0px;
+}
+
+.dark h2 {
+  margin: 25px 20px;
+}
+
+.dark h3 {
+  margin: 10px 20px;
+}
+
+.dark p {
+  margin: 10px 20px 20px 20px;
+}
+
+.dark {
+  display: inline-block;
+  width: 100%;
+}
+
+.picture {
+  margin: 0px 20px 0px 20px;
+}
+
+.icons h2 {
+  position: absolute;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.ui-design h2 {
+  position: absolute;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.button.future {
+  margin: 10px auto;
+}
+
+.screens img {
+  margin-top: 20px;
 }
