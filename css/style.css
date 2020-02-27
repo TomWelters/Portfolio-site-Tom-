@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5;
+  font-size: 1.5em;
   font-weight: 600;
   color: #000000;
 }
@@ -57,13 +57,6 @@ a:active {
 
 .radiushome img {
   border-radius: 6px;
-}
-
-span {
-  color: #545454;
-  font-size: 1.3em;
-  font-weight: 600;
-  line-height: 14px;
 }
 
 nav {
@@ -132,10 +125,6 @@ nav .projects a:focus {
   color: #FFFFFF;
 }
 
-#future-project .dark {
-  background-color: #0A1A35;
-}
-
 .social {
   margin-top: 10px;
 }
@@ -192,6 +181,10 @@ nav .projects a:focus {
 
 .subtitle {
   padding-top: 5px;
+  color: #545454;
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 nav > ul {
@@ -224,14 +217,6 @@ nav > ul > li{
   text-align: center;
 }
 
-.row h2 {
-  margin: 5px 0px 5px 0px;
-}
-
-.row p {
-  margin: 5px 0px 30px 0px;
-}
-
 .button {
   margin: 10px 0px;
 }
@@ -256,41 +241,16 @@ nav > ul > li{
   margin: 15px 0px;
 }
 
-#future img {
-  display: block;
-}
-
-.dark h2 {
-  margin: 25px 20px;
-}
-
-.dark h3 {
-  margin: 10px 20px;
-}
-
-.dark p {
-  margin: 10px 20px 20px 20px;
-}
-
-.dark {
-  display: inline-block;
-  width: 100%;
+.block img {
+  margin-bottom: 15px;
 }
 
 .picture {
   margin: 0px 20px 0px 20px;
 }
 
-.icons h2 {
-  position: absolute;
-  margin-top: 20px;
-  padding-left: 20px;
-}
-
-.ui-design h2 {
-  position: absolute;
-  margin-top: 20px;
-  padding-left: 20px;
+#future-project img {
+  display: block;
 }
 
 .button.future {
@@ -299,4 +259,31 @@ nav > ul > li{
 
 .screens img {
   margin-top: 20px;
+  }
+
+#future img {
+  display: block;
+}
+
+.screens div {
+  width: 50%;
+  display: inline-block;
+}
+
+.row h2 {
+  margin: 5px 0px 10px 0px;
+}
+
+.row h3 {
+  margin: 5px 0px;
+}
+
+.row p {
+  margin: 5px 0px 30px 0px;
+}
+
+#future-project .row {
+  background-color: #0A1A35;
+  margin: 0 0 1em;
+  padding: 1em;
 }
