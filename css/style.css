@@ -33,6 +33,11 @@ h3 {
   font-weight: 500;
 }
 
+#intro-future span {
+  font-weight: 500;
+  color: #000000;
+}
+
 img {
   width: 100%;
 }
@@ -241,8 +246,12 @@ nav > ul > li{
   margin: 15px 0px;
 }
 
+#intro-future h1 {
+  margin: 0.3em 0px;
+}
+
 .block img {
-  margin-bottom: 15px;
+  margin-bottom: 1em;
 }
 
 .picture {
@@ -253,14 +262,13 @@ nav > ul > li{
   display: block;
 }
 
-.button.future {
-  margin: 10px auto;
+.screens {
+  text-align: center;
 }
 
 .screens img {
   margin-top: 20px;
   }
-
 
 .screens div {
   width: 50%;
@@ -283,4 +291,12 @@ nav > ul > li{
   background-color: #0A1A35;
   margin: 0 0 1em;
   padding: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+.button.future {
+  margin: 10px 0px;
 }
