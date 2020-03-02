@@ -2,6 +2,7 @@
 Colors used:
 Primary Color (Blue): #3448C7;
 Secondary Color (grey): #FBFBFB;
+light grey: #999999;
 */
 
 * {
@@ -90,6 +91,10 @@ nav .projects a:active,
 nav .projects a:hover,
 nav .projects a:focus {
   color: #3448C7;
+}
+
+.description-project p {
+  color: #999999;
 }
 
 #title-about h1 {
@@ -198,7 +203,7 @@ nav > ul {
 }
 
 nav > ul > li{
-  padding: 10px 0px;
+  margin: 25px 0px;
 }
 
 .projects {
@@ -207,7 +212,7 @@ nav > ul > li{
 }
 
 .projects li {
-  padding: 5px 0px;
+  padding: 7px 0px;
 }
 
 #homepage .row {
@@ -238,6 +243,10 @@ nav > ul > li{
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+}
+
+#contact {
+  text-align: center;
 }
 
 /* Layout styling future page*/
@@ -299,4 +308,187 @@ nav > ul > li{
 
 .button.future {
   margin: 10px 0px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  nav {
+    display: none;
+  }
+
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+.col-md-6 {
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row-skills::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-md-6 {
+  float: left;
+  padding: 0 10px 0 10px;
+}
+
+.logo {
+    max-width: 450px;
+    padding: 20px 0px 10px 0px;
+  }
+
+.subtitle {
+  font-size: 1.8em;
+  padding-left: 5px;
+}
+
+.screens div {
+  width: 50%;
+  display: inline-block;
+  float: right;
+  padding: 0 5px 0 5px;
+}
+
+.section-about img {
+  width: 75%;
+}
+
+.section-about {
+  text-align: center;
+}
+
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1140px) {
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .right-section::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .section-about img {
+    width: 30%;
+  }
+
+  .section-about p {
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 180px;
+    padding: 20px 0px 10px 0px;
+  }
+
+  .subtitle {
+    font-size: 1.4em;
+    padding-left: 5px;
+  }
+
+  .right-container {
+    float:right;
+    width: 75%;
+  }
+
+  .lg {
+    width: 25%;
+    float: left;
+  }
+
+  #intro {
+    display: none;
+  }
+
+  .col-md-6 {
+    padding: 0 15px 0 15px;
+  }
+
+  #homepage {
+    margin: 50px 50px 0 70px;
+  }
+
+  #about {
+    margin: 50px 50px 0 70px;
+  }
+
+  #future {
+    margin: 50px 50px 0 70px;
+  }
+
+  .right-section .container {
+    padding: 0;
+  }
+
+  #intro-future {
+    padding: 5px 0 10px;
+  }
+
+  .screens div {
+    width: 25%;
+    display: inline-block;
+    float: right;
+    padding: 0 5px 0 5px;
+  }
+
+  #projects h2 {
+    font-size: 1em;
+  }
+
+
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+.logo {
+  max-width: 200px;
+  padding: 20px 0px 10px 0px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  padding-left: 5px;
+}
+
+.right-container {
+  float:right;
+  width: 75%;
+}
+
+#homepage {
+  margin: 50px 200px 0 250px;
+}
+
+#about {
+    margin: 50px 200px 0 250px;
+  }
+
+#future {
+  margin: 50px 200px 0 250px;
+}
+
 }
