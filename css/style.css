@@ -61,8 +61,24 @@ a:active {
   color: #3448C7;
 }
 
-.radiushome img {
+#projects img {
   border-radius: 6px;
+  background-color: #000000;
+  transition: 0.2s opacity;
+}
+
+#projects img:hover {
+  opacity: 0.8;
+}
+
+#projects svg {
+  border-radius: 6px;
+  background-color: #ffffff;
+  transition: 0.2s opacity;
+}
+
+#projects svg:hover {
+  opacity:0.8;
 }
 
 nav {
@@ -117,7 +133,6 @@ nav .projects a:focus {
 
 .skills {
   padding: 10px 0px 20px 0px;
-  background-color: #EEF6F9;
 }
 
 .column-skills h3 {
@@ -178,6 +193,40 @@ nav .projects a:focus {
   background-color: #47E4BA;
 }
 
+.margin {
+background-color: #EEF6F9;
+}
+
+/* animation styling */
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 /* Layout styling */
 
 .container {
@@ -229,6 +278,15 @@ nav > ul > li{
 
 .button {
   margin: 10px 0px;
+}
+
+.margin {
+  margin-top: 20px;
+  padding: 5px 0 5px 0;
+}
+
+.margin p {
+  padding: 0 15px 0 15px;
 }
 
 /* Layout styling about page*/
@@ -313,16 +371,23 @@ nav > ul > li{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-  nav {
-    display: none;
-  }
+
 
 }
 
 /* ==============================
-Medium devices (640px and larger)
+Medium devices (600px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 600px) {
+
+
+#projects [class*="col-"] {
+    display: table;
+}
+
+[class*="col-"] {
+  float:left;
+}
 
 .col-md-6 {
   width: 50%;
@@ -334,14 +399,19 @@ Medium devices (640px and larger)
   display: table;
 }
 
-.row-skills::after {
+.skills::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#contact::before {
   content: "";
   clear: both;
   display: table;
 }
 
 .col-md-6 {
-  float: left;
   padding: 0 10px 0 10px;
 }
 
@@ -374,7 +444,16 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1024px) {
+
+  nav {
+      display: inherit;
+    }
+
+  .wrapper {
+    max-width: 1240px;
+    margin: 50px auto;
+  }
 
   .col-lg-4 {
     width: 33.33%;
@@ -384,10 +463,18 @@ Large devices (1024px or larger)
     width: 25%;
   }
 
-  .right-section::after {
-    content: "";
-    clear: both;
-    display: table;
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .logo {
+    max-width: 200px;
+    padding: 20px 0px 10px 0px;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+    padding-left: 5px;
   }
 
   .section-about img {
@@ -396,54 +483,6 @@ Large devices (1024px or larger)
 
   .section-about p {
     text-align: center;
-  }
-
-  .logo {
-    max-width: 180px;
-    padding: 20px 0px 10px 0px;
-  }
-
-  .subtitle {
-    font-size: 1.4em;
-    padding-left: 5px;
-  }
-
-  .right-container {
-    float:right;
-    width: 75%;
-  }
-
-  .lg {
-    width: 25%;
-    float: left;
-  }
-
-  #intro {
-    display: none;
-  }
-
-  .col-md-6 {
-    padding: 0 15px 0 15px;
-  }
-
-  #homepage {
-    margin: 50px 50px 0 70px;
-  }
-
-  #about {
-    margin: 50px 50px 0 70px;
-  }
-
-  #future {
-    margin: 50px 50px 0 70px;
-  }
-
-  .right-section .container {
-    padding: 0;
-  }
-
-  #intro-future {
-    padding: 5px 0 10px;
   }
 
   .screens div {
@@ -457,6 +496,24 @@ Large devices (1024px or larger)
     font-size: 1em;
   }
 
+  .margin {
+  width: 100%;
+  }
+
+  #future-project .row {
+    padding: 2em;
+  }
+
+  .margin {
+    margin-top: 50px;
+    padding: 15px 0 15px 0;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+    padding: 0 20px 0 20px;
+  }
+
 
 }
 /* ==============================
@@ -464,31 +521,6 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 
-.logo {
-  max-width: 200px;
-  padding: 20px 0px 10px 0px;
-}
 
-.subtitle {
-  font-size: 1.5em;
-  padding-left: 5px;
-}
-
-.right-container {
-  float:right;
-  width: 75%;
-}
-
-#homepage {
-  margin: 50px 200px 0 250px;
-}
-
-#about {
-    margin: 50px 200px 0 250px;
-  }
-
-#future {
-  margin: 50px 200px 0 250px;
-}
 
 }
