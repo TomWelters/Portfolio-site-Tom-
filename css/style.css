@@ -369,6 +369,11 @@ footer {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+.column-skills {
+  background-color: #F0F0F0;
+  border-radius: 6px;
+}
+
 }
 
 /* ==============================
