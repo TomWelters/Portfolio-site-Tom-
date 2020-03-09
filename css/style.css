@@ -3,6 +3,7 @@ Colors used:
 Primary Color (Blue): #3448C7;
 Secondary Color (grey): #FBFBFB;
 light grey: #999999;
+light blue: #EEF6F9
 */
 
 * {
@@ -140,6 +141,11 @@ nav .projects a:focus {
   font-weight: 400;
 }
 
+.column-skills {
+  margin-bottom: 1.5em;
+  padding: 1em 0 1em 0;
+}
+
 #future-project {
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -155,7 +161,7 @@ nav .projects a:focus {
 }
 
 .social svg {
-  margin: 0 20px 0 0;
+  margin: 20px 10px 0 10px;
 }
 
 .social svg:hover #Group {
@@ -191,40 +197,6 @@ nav .projects a:focus {
 .button.future:active {
   color: #ffffff;
   background-color: #47E4BA;
-}
-
-.margin {
-background-color: #EEF6F9;
-}
-
-/* animation styling */
-
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* Layout styling */
@@ -280,13 +252,9 @@ nav > ul > li{
   margin: 10px 0px;
 }
 
-.margin {
-  margin-top: 20px;
-  padding: 5px 0 5px 0;
-}
-
-.margin p {
-  padding: 0 15px 0 15px;
+footer {
+  background-color: #EEF6F9;
+  padding: 2em 0 1.5em;
 }
 
 /* Layout styling about page*/
@@ -368,10 +336,38 @@ nav > ul > li{
   margin: 10px 0px;
 }
 
+/* animation styling */
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
-
 
 }
 
@@ -380,17 +376,23 @@ Medium devices (600px and larger)
 ================================= */
 @media only screen and (min-width: 600px) {
 
-
 #projects [class*="col-"] {
     display: table;
+    margin: 2%;
+    float: left;
 }
 
-[class*="col-"] {
-  float:left;
+#projects .row {
+  margin: 0 -2%;
 }
 
-.col-md-6 {
-  width: 50%;
+#projects .col-md-6 {
+  width: 46%;
+}
+
+.col-md-3 {
+  width: 25%;
+  float: left;
 }
 
 .row::after {
@@ -405,18 +407,8 @@ Medium devices (600px and larger)
   display: table;
 }
 
-#contact::before {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.col-md-6 {
-  padding: 0 10px 0 10px;
-}
-
 .logo {
-    max-width: 450px;
+    max-width: 400px;
     padding: 20px 0px 10px 0px;
   }
 
@@ -441,6 +433,7 @@ Medium devices (600px and larger)
 }
 
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -453,6 +446,16 @@ Large devices (1024px or larger)
   .wrapper {
     max-width: 1240px;
     margin: 50px auto;
+    display: flex;
+  }
+
+  [class*="col-"] {
+      display: table;
+      float: left;
+  }
+
+  #projects .col-lg-4 {
+    width: 29.33%;
   }
 
   .col-lg-4 {
@@ -465,6 +468,17 @@ Large devices (1024px or larger)
 
   .col-lg-9 {
     width: 75%;
+  }
+
+  footer .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+  }
+
+  footer .container .col-lg-9 {
+    float: right;
   }
 
   .logo {
@@ -496,31 +510,15 @@ Large devices (1024px or larger)
     font-size: 1em;
   }
 
-  .margin {
-  width: 100%;
-  }
-
   #future-project .row {
     padding: 2em;
   }
 
-  .margin {
-    margin-top: 50px;
-    padding: 15px 0 15px 0;
-  }
-
-  .col-lg-6 {
-    width: 50%;
-    padding: 0 20px 0 20px;
-  }
-
-
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-
-
 
 }
