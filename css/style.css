@@ -199,6 +199,10 @@ nav .projects a:focus {
   background-color: #47E4BA;
 }
 
+.navtoggle.responsive li  {
+  display: block;
+}
+
 /* Layout styling */
 
 .container {
@@ -369,9 +373,20 @@ footer {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+  .navtoggle li:not(:last-child) {
+  display: none;
+}
+
 .column-skills {
   background-color: #F0F0F0;
   border-radius: 6px;
+}
+
+.navtoggle .icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 25px;
 }
 
 }
@@ -380,6 +395,17 @@ footer {
 Medium devices (600px and larger)
 ================================= */
 @media only screen and (min-width: 600px) {
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle .icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 35px;
+}
 
 #projects [class*="col-"] {
     display: table;
@@ -413,7 +439,7 @@ Medium devices (600px and larger)
 }
 
 .logo {
-    max-width: 400px;
+    max-width: 250px;
     padding: 20px 0px 10px 0px;
   }
 
@@ -444,9 +470,13 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
-  nav {
-      display: inherit;
-    }
+.navtoggle li:not(:last-child) {
+    display: block;
+  }
+
+nav .icon {
+  display: none;
+}
 
   .wrapper {
     max-width: 1240px;
