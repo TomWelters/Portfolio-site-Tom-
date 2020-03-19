@@ -199,10 +199,6 @@ nav .projects a:focus {
   background-color: #47E4BA;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-}
-
 /* Layout styling */
 
 .container {
@@ -222,6 +218,35 @@ nav .projects a:focus {
   line-height: 1.4;
 }
 
+.navtoggle li:not(.last) {
+  display: none;
+}
+
+nav > ul > li > a {
+  text-transform: uppercase;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.last {
+  padding: 0;
+  margin: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  }
+
 nav > ul {
   list-style-type: none;
   padding: 0px;
@@ -229,6 +254,10 @@ nav > ul {
 
 nav > ul > li{
   margin: 25px 0px;
+}
+
+li.work{
+  margin: 25px 0px 10px 0;
 }
 
 .projects {
@@ -373,20 +402,9 @@ footer {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-  .navtoggle li:not(:last-child) {
-  display: none;
-}
-
 .column-skills {
   background-color: #F0F0F0;
   border-radius: 6px;
-}
-
-.navtoggle .icon {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  font-size: 25px;
 }
 
 }
@@ -396,16 +414,9 @@ Medium devices (600px and larger)
 ================================= */
 @media only screen and (min-width: 600px) {
 
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle .icon {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  font-size: 35px;
-}
+.navtoggle li .icon {
+    font-size: 35px;
+  }
 
 #projects [class*="col-"] {
     display: table;
@@ -470,7 +481,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
-.navtoggle li:not(:last-child) {
+.navtoggle li:not(.last) {
     display: block;
   }
 
