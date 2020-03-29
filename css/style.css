@@ -2,7 +2,7 @@
 Colors used:
 Primary Color (Blue): #3448C7;
 Secondary Color (grey): #FBFBFB;
-light grey: #999999;
+light grey: #707070;
 light blue: #EEF6F9
 */
 
@@ -11,24 +11,24 @@ light blue: #EEF6F9
 }
 
 body {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   font-family: 'Muli', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #999999;
+  color: #707070;
 }
 
 h1 {
   font-size: 2em;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 600;
-  color: #000000;
+  color: #000;
 }
 
 h3 {
@@ -37,7 +37,7 @@ h3 {
 
 #intro-future span {
   font-weight: 500;
-  color: #000000;
+  color: #000;
 }
 
 img {
@@ -45,26 +45,26 @@ img {
 }
 
 a {
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
 a:visited {
-  color: #000000;
+  color: #000;
 }
 
 a:hover,
-a:focus, {
-  color: #3448C7;
+a:focus {
+  color: #3448c7;
 }
 
 a:active {
-  color: #3448C7;
+  color: #3448c7;
 }
 
 #projects img {
   border-radius: 6px;
-  background-color: #000000;
+  background-color: #000;
   transition: 0.2s opacity;
 }
 
@@ -74,12 +74,12 @@ a:active {
 
 #projects svg {
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: #fff;
   transition: 0.2s opacity;
 }
 
 #projects svg:hover {
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 nav {
@@ -89,12 +89,12 @@ nav {
 
 nav a:hover,
 nav a:focus {
-  color: #3448C7;
+  color: #3448c7;
   font-weight: 500;
 }
 
 nav a:active {
-  color: #3448C7;
+  color: #3448c7;
   font-weight: 500;
 }
 
@@ -107,15 +107,15 @@ nav .projects a {
 nav .projects a:active,
 nav .projects a:hover,
 nav .projects a:focus {
-  color: #3448C7;
+  color: #3448c7;
 }
 
 .description-project p {
-  color: #999999;
+  color: #707070;
 }
 
 #title-about h1 {
-  color: #3448C7;
+  color: #3448c7;
   font-weight: 700;
   font-size: 2em;
   text-align: center;
@@ -126,24 +126,24 @@ nav .projects a:focus {
 }
 
 .skills h2 {
-  color: #3448C7;
+  color: #3448c7;
   font-weight: 600;
   text-align: center;
   font-size: 1.5em;
 }
 
 .skills {
-  padding: 10px 0px 20px 0px;
+  padding: 10px 0 20px;
 }
 
 .column-skills h3 {
-  color: #3448C7;
+  color: #3448c7;
   font-weight: 400;
 }
 
 .column-skills {
   margin-bottom: 1.5em;
-  padding: 1em 0 1em 0;
+  padding: 1em 0;
 }
 
 #future-project {
@@ -153,7 +153,7 @@ nav .projects a:focus {
 #future-project h2,
 #future-project h3,
 #future-project p {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .social {
@@ -161,42 +161,42 @@ nav .projects a:focus {
 }
 
 .social svg {
-  margin: 20px 10px 0 10px;
+  margin: 20px 10px 0;
 }
 
-.social svg:hover #Group {
-  fill: #3448C7;
+.social svg:hover .Group {
+  fill: #3448c7;
 }
 
 .button {
-    display: inline-block;
-    background-color: #3448C7;
-    color: #ffffff;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 3px;
-    border: 2px solid #3448C7;
-    transition: 0.2s opacity;
-  }
+  display: inline-block;
+  background-color: #3448c7;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid #3448c7;
+  transition: 0.2s opacity;
+}
 
 .button:hover,
 .button:active {
-    color: #3448C7;
-    background-color: transparent;
-  }
+  color: #3448c7;
+  background-color: transparent;
+}
 
 .button.future {
   display: inline-block;
-  color: #ffffff;
-  background-color: rgba(71,228,186,0.2);
+  color: #fff;
+  background-color: rgba(71, 228, 186, 0.2);
   font-weight: 500;
-  border: 2px solid #47E4BA;
+  border: 2px solid #47e4ba;
 }
 
 .button.future:hover,
 .button.future:active {
-  color: #ffffff;
-  background-color: #47E4BA;
+  color: #fff;
+  background-color: #47e4ba;
 }
 
 /* Layout styling */
@@ -207,7 +207,7 @@ nav .projects a:focus {
 
 .logo {
   max-width: 200px;
-  padding: 20px 0px 10px 0px;
+  padding: 20px 0 10px;
 }
 
 .subtitle {
@@ -226,15 +226,16 @@ nav > ul > li > a {
   text-transform: uppercase;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.responsive {
   position: relative;
 }
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .last {
@@ -242,31 +243,31 @@ nav > ul > li > a {
   margin: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 15px 0;
-  }
+}
 
 nav > ul {
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
 }
 
-nav > ul > li{
-  margin: 20px 0px;
+nav > ul > li {
+  margin: 20px 0;
 }
 
-li.work{
-  margin: 25px 0px 10px 0;
+li.work {
+  margin: 25px 0 10px;
 }
 
 .projects {
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
 }
 
 .projects li {
-  padding: 7px 0px;
+  padding: 7px 0;
 }
 
 #homepage .row {
@@ -282,40 +283,40 @@ li.work{
 }
 
 .button {
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 footer {
-  background-color: #EEF6F9;
+  background-color: #eef6f9;
   padding: 2em 0 1.5em;
 }
 
-/* Layout styling about page*/
+/* Layout styling about page */
 
 .skills h3 {
-  margin: 15px 0px 5px 0px;
+  margin: 15px 0 5px;
   text-align: center;
 }
 
 .column-skills ul {
   text-align: center;
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 #contact {
   text-align: center;
 }
 
-/* Layout styling future page*/
+/* Layout styling future page */
 
 #intro-future p {
-  margin: 15px 0px;
+  margin: 15px 0;
 }
 
 #intro-future h1 {
-  margin: 0.3em 0px;
+  margin: 0.3em 0;
 }
 
 .block img {
@@ -323,7 +324,7 @@ footer {
 }
 
 .picture {
-  margin: 0px 20px 0px 20px;
+  margin: 0 20px;
 }
 
 #future-project img {
@@ -336,7 +337,7 @@ footer {
 
 .screens img {
   margin-top: 20px;
-  }
+}
 
 .screens div {
   width: 50%;
@@ -344,19 +345,19 @@ footer {
 }
 
 .row h2 {
-  margin: 5px 0px 10px 0px;
+  margin: 5px 0 10px;
 }
 
 .row h3 {
-  margin: 5px 0px;
+  margin: 5px 0;
 }
 
 .row p {
-  margin: 5px 0px 30px 0px;
+  margin: 5px 0 30px;
 }
 
 #future-project .row {
-  background-color: #0A1A35;
+  background-color: #0a1a35;
   margin: 0 0 1em;
   padding: 1em;
 }
@@ -366,15 +367,15 @@ footer {
 }
 
 .button.future {
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 /* animation styling */
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
 
 .sun {
@@ -382,8 +383,8 @@ footer {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
 
 .cloud-front {
@@ -391,8 +392,8 @@ footer {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
 
 .cloud-back {
@@ -401,96 +402,91 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
-.column-skills {
-  background-color: #F0F0F0;
-  border-radius: 6px;
-}
-
+  .column-skills {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+  }
 }
 
 /* ==============================
 Medium devices (600px and larger)
 ================================= */
 @media only screen and (min-width: 600px) {
-
-.navtoggle li .icon {
+  .navtoggle li .icon {
     font-size: 35px;
   }
 
-#projects [class*="col-"] {
+  #projects [class*="col-"] {
     display: table;
     margin: 2%;
     float: left;
-}
-
-#projects .row {
-  margin: 0 -2%;
-}
-
-#projects .col-md-6 {
-  width: 46%;
-}
-
-.col-md-3 {
-  width: 25%;
-  float: left;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.skills::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.logo {
-    max-width: 250px;
-    padding: 20px 0px 10px 0px;
   }
 
-.subtitle {
-  font-size: 1.8em;
-  padding-left: 5px;
-}
+  #projects .row {
+    margin: 0 -2%;
+  }
 
-.screens div {
-  width: 50%;
-  display: inline-block;
-  float: right;
-  padding: 0 5px 0 5px;
-}
+  #projects .col-md-6 {
+    width: 46%;
+  }
 
-.section-about img {
-  width: 75%;
-}
+  .col-md-3 {
+    width: 25%;
+    float: left;
+  }
 
-.section-about {
-  text-align: center;
-}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
+  .skills::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .logo {
+    max-width: 250px;
+    padding: 20px 0 10px;
+  }
+
+  .subtitle {
+    font-size: 1.8em;
+    padding-left: 5px;
+  }
+
+  .screens div {
+    width: 50%;
+    display: inline-block;
+    float: right;
+    padding: 0 5px;
+  }
+
+  .section-about img {
+    width: 75%;
+  }
+
+  .section-about {
+    text-align: center;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
-.navtoggle li:not(.last) {
+  .navtoggle li:not(.last) {
     display: block;
   }
 
-nav .icon {
-  display: none;
-}
+  nav .icon {
+    display: none;
+  }
 
-.navtoggle.responsive li  {
-  padding: 10px 0;
+  .navtoggle.responsive li {
+    padding: 10px 0;
   }
 
   .wrapper {
@@ -500,8 +496,8 @@ nav .icon {
   }
 
   [class*="col-"] {
-      display: table;
-      float: left;
+    display: table;
+    float: left;
   }
 
   #projects .col-lg-4 {
@@ -533,7 +529,7 @@ nav .icon {
 
   .logo {
     max-width: 200px;
-    padding: 20px 0px 10px 0px;
+    padding: 20px 0 10px;
   }
 
   .subtitle {
@@ -553,7 +549,7 @@ nav .icon {
     width: 25%;
     display: inline-block;
     float: right;
-    padding: 0 5px 0 5px;
+    padding: 0 5px;
   }
 
   #projects h2 {
@@ -563,12 +559,4 @@ nav .icon {
   #future-project .row {
     padding: 2em;
   }
-
-}
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-
 }
