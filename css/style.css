@@ -402,6 +402,7 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
   .column-skills {
     background-color: #f0f0f0;
     border-radius: 6px;
@@ -412,6 +413,7 @@ footer {
 Medium devices (600px and larger)
 ================================= */
 @media only screen and (min-width: 600px) {
+
   .navtoggle li .icon {
     font-size: 35px;
   }
@@ -420,6 +422,7 @@ Medium devices (600px and larger)
     display: table;
     margin: 2%;
     float: left;
+    min-height: 335px;
   }
 
   #projects .row {
@@ -477,6 +480,7 @@ Medium devices (600px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
   .navtoggle li:not(.last) {
     display: block;
   }
